@@ -1,0 +1,143 @@
+:root {
+    --color-blue0: #474caf;
+    --color-blue1: #3a82ac;
+    --color-blue2: #528dbd;
+    --color-bluebg0: #e3e8e9;
+    --color-bluebg1: #d4dee0;
+    --color-greybg0: #21292b;
+    --color-greybg1: #818b89;
+    --color-grey0: #3a3c3d;
+    --color-grey1: #2e3335;
+    --color-grey2: #222a2c;
+    --color-cream: #ecf5ff;
+
+    --font-norm1: 'Work Sans', sans-serif;
+    --font-norm2: 'Kanit', sans-serif;
+    transition: 0.3s 0.2s ease-in-out;
+    font-family: var(--font-norm1);
+    background-color: var(--color-bluebg0);
+    /* font-family: 'Kanit', sans-serif; */
+}
+
+/* Header styles  */
+
+header,
+header a {
+    background-color: var(--color-greybg0);
+    color: var(--color-cream);
+}
+
+header h1 {
+    text-shadow: 2px 2px 0.5px var(--color-blue2);
+    font-family: 'Nunito', sans-serif;
+
+}
+
+
+/* Animation styles */
+header nav a {
+
+    box-shadow: 1px 0px 0.4px #3c7ccb;
+    background-color: white;
+    background: linear-gradient(to right, transparent 50%, #3ccbcb61 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: 0.3s;
+    transition-delay: 0.1s;
+
+}
+
+nav a:hover {
+    transform: scaleX(2);
+    background-position: right;
+    font-size: 0.9rem;
+}
+
+/* main styles  */
+
+h2 {
+
+    color: var(--color-grey0);
+    font-family: var(--font-norm2);
+
+}
+
+.change {
+    color: var(--color-blue2);
+}
+
+main section ul {
+    background-color: var(--color-bluebg1);
+    color: var(--color-grey1);
+
+    box-shadow: 0px 4px 2px #1d363b82, 0px 0px 15px var(--color-blue2);
+}
+
+#ul-themes li:hover {
+    background-color: var(--color-bluebg1);
+    color: var(--color-grey2);
+
+    box-shadow: 0px 4px 5px #1d363b82, 0px -1px 15px var(--color-bluebg1);
+}
+
+button {
+    color: var(--color-cream);
+    background-color: var(--color-blue1);
+
+
+    box-shadow: 1px 1px 5px #3ea7bf8a;
+    border-bottom: solid 2px #1b2a2d3f;
+
+}
+
+button:hover {
+
+    color: var(--color-blue1);
+    background-color: var(--color-cream);
+    box-shadow: 0px 0px 5px var(--color-blue1);
+    border-left: solid 2px var(--color-blue0);
+}
+
+button#btn-blue {
+    color: var(--color-blue1);
+    background-color: var(--color-cream);
+    box-shadow: 0px 0px 5px var(--color-blue1);
+    border-left: solid 2px var(--color-blue0);
+
+}
+
+@media (max-width:480px) {
+    main section ul {
+        /* background-color:s transparent;
+        box-shadow: none; */
+        font-size: 0.7rem;
+        font-weight: 400;
+
+    }
+
+    main section h2 {
+        font-size: 1rem;
+
+        font-weight: 200;
+    }
+
+}
+
+@media (min-width:1200px) {
+    main section ul {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    #ul-themes li,
+    main section ul li {
+        background-color: var(--color-bluebg1);
+        box-shadow: 0px 4px 2px #1d393b82, 0px -1px 15px var(--color-bluebg1);
+    }
+
+    #ul-themes li:hover {
+        background-color: var(--color-bluebg1);
+        box-shadow: 0px 4px 5px #1a394582, 0px 0px 5px var(--color-blue2);
+    }
+
+}

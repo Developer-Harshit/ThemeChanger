@@ -1,0 +1,141 @@
+:root {
+    --color-yellow0: #c0a23f;
+    --color-yellow1: #bea536;
+    --color-yellow2: #ceae47;
+    --color-yellowbg0: #e9e7e3;
+    --color-yellowbg1: #e0dbd4;
+    --color-greybg0: #2b2a21;
+    --color-greybg1: #8b8881;
+    --color-grey0: #3d3c3a;
+    --color-grey1: #35322e;
+    --color-grey2: #2c2a22;
+    --color-cream: #fff2ec;
+
+    --font-norm1: 'Work Sans', sans-serif;
+    --font-norm2: 'Kanit', sans-serif;
+    transition: 0.3s 0.2s ease-in-out;
+    font-family: var(--font-norm1);
+    background-color: var(--color-yellowbg0);
+    /* font-family: 'Kanit', sans-serif; */
+}
+
+/* Header styles  */
+
+header,
+header a {
+    background-color: var(--color-greybg0);
+    color: var(--color-cream);
+}
+
+header h1 {
+    text-shadow: 2px 2px 0.5px var(--color-yellow2);
+    font-family: 'Nunito', sans-serif;
+
+}
+
+header nav a {
+
+    box-shadow: 1px 0px 0.4px #cbac3c;
+    background-color: white;
+    background: linear-gradient(to right, transparent 50%, #cba23c61 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: 0.3s;
+    transition-delay: 0.1s;
+
+}
+
+nav a:hover {
+    transform: scaleX(2);
+    background-position: right;
+    font-size: 0.9rem;
+}
+
+/* main styles  */
+
+h2 {
+
+    color: var(--color-grey0);
+    font-family: var(--font-norm2);
+
+}
+
+.change {
+    color: var(--color-yellow2);
+}
+
+main section ul {
+    background-color: var(--color-yellowbg1);
+    color: var(--color-grey1);
+
+    box-shadow: 0px 4px 2px #3b301d82, 0px 0px 15px var(--color-yellow2);
+}
+
+#ul-themes li:hover {
+    background-color: var(--color-yellowbg1);
+    color: var(--color-grey2);
+
+    box-shadow: 0px 4px 5px #3b351d82, 0px -1px 15px var(--color-yellowbg1);
+}
+
+button {
+    color: var(--color-cream);
+    background-color: var(--color-yellow1);
+
+
+    box-shadow: 1px 1px 5px #bf983e8a;
+    border-bottom: solid 2px #2d271b3f;
+
+}
+
+button:hover {
+
+    color: var(--color-yellow1);
+    background-color: var(--color-cream);
+    box-shadow: 0px 0px 5px var(--color-yellow1);
+    border-left: solid 2px var(--color-yellow0);
+}
+
+button#btn-yelo {
+    color: var(--color-yellow1);
+    background-color: var(--color-cream);
+    box-shadow: 0px 0px 5px var(--color-yellow1);
+    border-left: solid 2px var(--color-yellow0);
+
+}
+
+@media (max-width:480px) {
+    main section ul {
+        /* background-color:s transparent;
+        box-shadow: none; */
+        font-size: 0.7rem;
+        font-weight: 400;
+
+    }
+
+    main section h2 {
+        font-size: 1rem;
+
+        font-weight: 200;
+    }
+
+}
+
+@media (min-width:1200px) {
+    main section ul {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    #ul-themes li,
+    main section ul li {
+        background-color: var(--color-yellowbg1);
+        box-shadow: 0px 4px 2px #3b2f1d82, 0px -1px 15px var(--color-yellowbg1);
+    }
+
+    #ul-themes li:hover {
+        background-color: var(--color-yellowbg1);
+        box-shadow: 0px 4px 5px #45351a82, 0px 0px 5px var(--color-yellow2);
+    }
+
+}
